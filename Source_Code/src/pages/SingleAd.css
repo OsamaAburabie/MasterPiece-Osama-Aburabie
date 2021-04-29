@@ -1,0 +1,34 @@
+.con__card {
+  width: 100%;
+
+  /* background: #333; */
+  padding: 1rem;
+}
+.con__card__upper {
+  display: flex;
+  justify-content: center;
+}
+.con__card__upper img {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.book__btn {
+  width: 100%;
+  text-align: center;
+  outline: none !important;
+  padding: 5px 0 5px 0;
+}
+
+.book__btn:hover {
+  cursor: pointer;
+}
+
+.book__btn:disabled,
+.book__btn[disabled] {
+  background-color: #cccccc;
+  color: #666666;
+}
+.book__btn:disabled:hover {
+  cursor: not-allowed;
+}

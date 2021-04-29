@@ -1,0 +1,61 @@
+/* index.css */
+html {
+  height: 100%;
+  overflow: auto;
+}
+body {
+  height: 100%;
+}
+:root {
+  @apply light;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.dark {
+  --color-bg-primary: #23272a;
+  --color-bg-secondary: #2c2f33;
+  --color-bg-btn: #2489a9;
+  --color-text-primary: #f7fafc;
+  --color-text-secondary: #e2e8f0;
+  --color-text-btn: #ffffff;
+  --color-text-accent: #81e6d9;
+  --color-bg-btnsec: #186982;
+}
+
+.light {
+  --color-bg-primary: #f8f8f8f8;
+  --color-bg-secondary: #ffffff;
+  --color-bg-btn: #2489a9;
+  --color-text-primary: #2d3748;
+  --color-text-secondary: #4a5568;
+  --color-text-btn: #ffffff;
+  --color-text-accent: #2b6cb0;
+  --color-bg-btnsec: #186982;
+}
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.card {
+  @apply rounded bg-secondary border-gray-200 text-secondary shadow-md overflow-hidden relative;
+}
